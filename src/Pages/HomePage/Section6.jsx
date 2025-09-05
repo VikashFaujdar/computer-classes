@@ -11,12 +11,12 @@ const Section6 = () => {
       <div className="container flex items-center flex-col px-4">
         <div className="w-full flex flex-col md:flex md:flex-row md:justify-between md:items-end">
           <div className="dts">
-            <h1 className='text-center text-3xl font-normal md:text-start md:text-[2.5vw]'>Find your <span className='text-green-400'>courses</span></h1>
+            <h1 className='text-center text-3xl md:text-start md:text-[2.5vw] font-medium'>Find your <span className='text-green-400'>courses</span></h1>
             <p className='text-center my-4 text-xs text-zinc-500 md:w-[60%] md:text-start'>Lorem ipsum dolor, sit amet dafghjadg afhdsgjhfga fhadsjhfk fadsjhf consectetur adipisicing elit.o illo omnis facere numquam culpa.</p>
           </div>
-          <button className='bg-transparent py-3 text-zinc-600 text-sm border-1 px-5 rounded-2xl my-3 self-center hover:bg-green-300 hover:text-white hover:border-green-300 transition-all duration-200 cursor-pointer md:text-2sm'>See All Courses</button>
+          <button className='bg-transparent py-3 text-zinc-600 text-sm border-1 px-5 rounded-2xl my-3 self-center hover:bg-green-500 hover:text-white hover:border-green-300 transition-all duration-200 cursor-pointer md:text-2sm'>See All Courses</button>
         </div>
-        <div className="cards-container mt-20 grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="cards-container mt-10 md:mt-20 grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="relative lg:mb-5 sm:mb-10 mb-8 w-full h-[500px] bg-white shadow-[0_25px_25px_rgba(0,0,0,0.25)] flex flex-col justify-center items-center transition-all duration-500 rounded-[10px] m-0 p-5 backdrop-blur-[10px] border border-green-300 hover:border-[1px_solid_rgba(255,255,255,0.1)] ">
             <div className="absolute -top-10 right-5 price h-22 w-22 rounded-full bg-red-700 flex items-center justify-center text-white">
               <h1 className="text-3xl">$35</h1>

@@ -172,10 +172,10 @@ export default function App() {
   ];
 
   return (
-    <div className="h-full rounded-xl md:w-1/2 bg-gradient-to-b from-slate-50 to-white py-10 px-8">
+    <div className="h-full rounded-xl md:w-1/2 bg-gradient-to-b from-slate-50 to-white py-5 px-8">
       <div className="mx-auto  text-center md:text-start mb-8">
-        <h1 className="text-green-500 text-xl mb-5 font-extralight">Faqs</h1>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal text-slate-900 tracking-tight">
+        <h1 className="text-green-500 text-xl mb-5 font-medium">Faqs</h1>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-slate-900 tracking-tight font-medium">
           Frequently asked <span className="text-green-500">questions</span>
         </h1>
         <p className="text-slate-600 mt-2">

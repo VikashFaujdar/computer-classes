@@ -115,7 +115,7 @@ const Section1 = () => {
               <option>ADCA</option>
             </select>
 
-            <button className="w-[80%] cursor-pointer rounded-2xl border-2 border-[#4DC879] bg-[#4DC879] py-3 text-xs text-zinc-800 md:w-[48%] md:rounded-tl-none md:rounded-bl-none md:py-4">
+            <button className="w-[80%] cursor-pointer rounded-2xl border-2 border-[#4DC879] bg-[#4DC879] py-3 text-xs text-zinc-800 md:w-[48%] md:rounded-tl-none md:rounded-bl-none md:py-4 font-semibold md:font-normal">
               BOOK NOW
             </button>
           </div>
