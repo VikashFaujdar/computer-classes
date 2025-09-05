@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo-3.png'
 import { IoMdMenu } from "react-icons/io";
 import { RiMenu3Line } from "react-icons/ri";
 import { useGSAP } from '@gsap/react';
@@ -36,7 +35,6 @@ const Header = () => {
     <div className="header sticky top-0 left-0 right-0 z-40 w-full h-full bg-[#FEFBEC] ">
       <div className='container w-full px-4 lg:px-0 flex items-center justify-between h-18 '>
         <div className="logo w-40 md:w-50 object-center" >
-          <img src={logo} alt="logo" className='object-center' />
         </div>
 
         <nav className='Nav lg:flex items-center space-x-15 hidden'>
