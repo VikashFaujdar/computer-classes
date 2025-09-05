@@ -6,13 +6,13 @@ import { BrowserRouter } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Cursor from './components/Cursor.jsx'
-// import Loader from './components/Loader.jsx'
+import Loader from './components/Loader.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
     <Cursor />
-    {/* <Loader /> */}
+    <Loader />
     <Header/>
     <App />
     <Footer/>

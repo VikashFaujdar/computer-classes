@@ -17,7 +17,7 @@ const Loader = () => {
 
     ShowLoad()
   return (
-    <div className={showLoader == true ? "h-screen fixed top-0 left-0 right-0 z-50 w-screen bg-zinc-800 flex justify-center items-center backdrop-blur-2xl" : "hidden"}>
+    <div className={showLoader == true ? "h-screen hidden  fixed top-0 left-0 right-0 z-50 w-screen bg-zinc-800 md:flex justify-center items-center backdrop-blur-2xl" : "hidden"}>
     <StyledWrapper>
       <div className="loader">
         <div className="loader-square" />
