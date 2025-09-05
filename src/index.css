@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.ttf);
+}
+
+*{
+    font-family: poppins;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right:15px;
+}

@@ -1,0 +1,1 @@
+ffmpeg -i input.mkv -start_number 1 -vsync 0 -q:v 1 public/frames/frame_%04d.jpg
