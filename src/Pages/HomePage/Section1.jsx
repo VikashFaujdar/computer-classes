@@ -129,7 +129,7 @@ const Section1 = () => {
               >
                 <img src={elem.img} alt="logo" className="w-[20%] md:w-[30%]" />
                 <h1 className="text-xl">
-                  <CountUp end={elem.end} duration={2} delay={4} className="text-xl" />
+                  <CountUp end={elem.end} duration={2} delay={4} className="text-xl" />+
                 </h1>
                 <p className="text-sm text-zinc-500">{elem.text}</p>
               </div>
