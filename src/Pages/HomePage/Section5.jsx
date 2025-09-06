@@ -69,7 +69,7 @@ const Section5 = () => {
                 </div>
                 <div className="right lg:w-1/2 h-full">
                     <h3 className='text-green-400 sub text-xl my-2 md:text-2xl h-full overflow-hidden'>Features</h3>
-                    <h1 className='text-[32px] title leading-9 text-zinc-700 my-2 md:text-5xl md:leading-[1] font-medium h-full overflow-hidden '>Elevate  your skills <span className='text-green-400'>with</span> expert <span className='text-green-400'>coaching courses</span></h1>
+                    <h1 className='text-[30px] title leading-8 text-zinc-700 my-2 md:text-5xl md:leading-[1] font-medium h-full overflow-hidden '>Elevate  your skills <span className='text-green-400'>with</span> expert <span className='text-green-400'>coaching courses</span></h1>
                     <p className='text-sm text-zinc-600 my-2 font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.fdjhd jHUY87rey  Quisquam, sequi facilis!</p>
                     <div className="card flex items-center gap-4 w-full h-full bg-white p-4 rounded-2xl shadow-2xl mt-5">
                         <img src={cyber} alt="cyber" className='h-15' />
