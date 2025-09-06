@@ -5,12 +5,37 @@ import vc2 from '../../assets/vc-1.png'
 import point from '../../assets/point.png'
 import icon from '../../assets/icon.png'
 import cyber from '../../assets/cyber.png'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Section5 = () => {
+
+    useGSAP(()=>{
+
+        const featureTl = gsap.timeline({
+            scrollTrigger:{
+                trigger: ".feature",
+                start: "top 50%",
+                markers:true,
+        }})
+
+        featureTl.from(".feature .left", {
+            x:-100,
+            opacity:0,
+            duration:1
+        })
+
+        featureTl.from(".feature .right", {
+            x:100,
+            opacity:0,
+            duration:1
+        })
+    })
+
   return (
-    <div className='section-5 bg-[#FEFBEC]'>
+    <div className='section-5 feature bg-[#FEFBEC]'>
         <div className="container lg:flex justify-between gap-10 items-center px-4 py-10">
-            <div className=" relative flex justify-start w-full  lg:w-1/2 h-full py-4">
+            <div className="left relative flex justify-start w-full  lg:w-1/2 h-full py-4">
                 <img src={Circle} alt="circle" className='scale-75'/>
                 <img src={girl} alt="girl" className='absolute z-10 scale-75'/>
                 <img src={vc1} alt="vc" className='absolute z-10 h-28 sm:h-35 sm:top-10 sm:right-5 lg:h-40 top-5 right-0'/>

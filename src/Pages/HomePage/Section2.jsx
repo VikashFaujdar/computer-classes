@@ -14,7 +14,6 @@ const Section2 = () => {
                 trigger:".section2",
                 start:"top 90%",
                 end:"top 10%",
-                duration:3,
                 scrub:true
             }
         })
