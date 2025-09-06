@@ -2,7 +2,7 @@ import React from 'react'
 import { FiInstagram } from "react-icons/fi";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import FooterLogo from '../assets/Logo-3.png'
+// import FooterLogo from '../assets/Logo-3.png'
 
 
 
@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container flex flex-col justify-center w-full">
         <div className="footerTop flex flex-col items-center flex-wrap md:flex-row md:justify-between mx-auto md:mx-0 gap-4 mb-4">
           <div className="dts flex flex-col items-center justify-center md:items-start text-center md:text-start" >
-            <img src={FooterLogo} alt="footer logo" className='h-10' />
+            {/* <img src={FooterLogo} alt="footer logo" className='h-10' /> */}
             <p className='text-sm my-5 text-white max-w-sm pr-8 font-semi'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div className="flex justify-center md:justify-start items-center w-full my-5">
               <input type="text" className='py-3 pl-5 border-2 md:w-xs w-[60vw] rounded-l-2xl border-r-0 outline-0  border-white bg-transparent text-white text-sm' placeholder='Enter your email' />
