@@ -15,9 +15,7 @@ const Section5 = () => {
         const featureTl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".feature",
-                start: "top 70%",
-                end: "top 30%",
-                scrub:true
+                start: "top 75%",
             }
         })
 
@@ -45,16 +43,16 @@ const Section5 = () => {
         featureTl.from(featureSubTitle.chars, {
             y: 100,
             opacity:0,
-            duration: 0.5,
-            stagger: 0.3
+            duration: 0.2,
+            stagger: 0.1
         })
 
 
         featureTl.from(featureTitle.words, {
             y: 100,
             opacity: 0,
-            duration: 0.5,
-            stagger: 0.3
+            duration: 0.2,
+            stagger: 0.2
         })
     })
 
