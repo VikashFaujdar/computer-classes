@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={FooterLogo} alt="footer logo" className='h-10' />
             <p className='text-sm my-5 text-white max-w-sm pr-8 font-semi'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div className="flex justify-center md:justify-start items-center w-full my-5">
-              <input type="text" className='py-3 pl-5 border-2 md:w-xs w-[60vw] rounded-l-2xl border-r-0 border-white bg-transparent text-white text-sm' placeholder='Enter your email' />
+              <input type="text" className='py-3 pl-5 border-2 md:w-xs w-[60vw] rounded-l-2xl border-r-0 outline-0  border-white bg-transparent text-white text-sm' placeholder='Enter your email' />
               <button className='bg-[#EB5942] cursor-pointer hover:bg-green-500 transition-all duration-300 text-white py-3 px-6 rounded-r-2xl'>Send</button>
             </div>
             <div className="icons flex items-center gap-5 my-8">

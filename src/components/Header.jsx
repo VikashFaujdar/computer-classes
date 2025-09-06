@@ -4,6 +4,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Logo from '../assets/Logo-3.png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -40,16 +41,17 @@ const Header = () => {
         </div>
 
         <nav className='Nav lg:flex items-center space-x-15 hidden'>
-          <a href="" className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Home</a>
-          <a href="" className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>About Us</a>
-          <a href="" className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Mentors</a>
-          <a href="" className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Courses</a>
+        
+          <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Home</Link>
+          <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>About Us</Link>
+          <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Mentors</Link>
+          <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Courses</Link>
         </nav>
 
         <div className="btnsContainer hidden sm:flex lg:flex-row-reverse lg:gap-12 space-x-10 items-center">
           <RiMenu3Line className='size-10 font-bold text-[#4DC879] transition-all hover:text-orange-300 cursor-pointer' />
           <button className='py-3 rounded-2xl px-6 border-1 border-zinc-500 text-zinc-500 transition-all hover:bg-[#4DC879] hover:border-[#4DC879] hover:text-zinc-50'>
-            Register Now
+            <Link to='/contact'>Register Now</Link>
           </button>
         </div>
 
@@ -61,10 +63,10 @@ const Header = () => {
       </div>
 
       <nav className={showmenu == true ? ' fixed top-18  -left-[120%] transition-all duration-500 w-full h-screen  z-50' : 'md:hidden items-start pl-5 pt-4 transition-all duration-500 text-xs font-normal space-y-5 fixed left-0 top-18   flex z-50 flex-col bg-[#FEFBEC] h-screen w-[400px]'}>
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Mentors</a>
-        <a href="">Courses</a>
+        <Link to=''>Home</Link>
+        <Link to=''>About Us</Link>
+        <Link to=''>Mentors</Link>
+        <Link to=''>Courses</Link>
       </nav>
     </div>
   )
