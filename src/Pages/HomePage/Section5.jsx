@@ -77,8 +77,8 @@ const Section5 = () => {
     })
 
     return (
-        <div className='section-5 feature bg-[#FEFBEC]'>
-            <div className="container lg:flex justify-between gap-10 items-center px-4 py-10">
+        <div className='section-5 feature bg-[#FEFBEC] overflow-x-hidden'>
+            <div className="container lg:flex justify-between gap-10 items-center px-4 py-10 overflow-x-hidden">
                 <div className="left relative flex justify-start w-full  lg:w-1/2 h-full py-4">
                     <img src={Circle} alt="circle" className='scale-75' />
                     <img src={girl} alt="girl" className='absolute z-10 scale-75' />

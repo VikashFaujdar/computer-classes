@@ -85,7 +85,7 @@ const Section2 = () => {
         <div className="container  h-full px-4 md:flex md:flex-col relative z-30">
             <h3 className='text-[#4DC879] text-center text-xl py-2 md:text-2xl md:py-4'>Categories</h3>
             <h1 className='text-center text-3xl pb-2 md:text-5xl font-medium'>Top <span className='text-[#4DC879]'>Categories</span></h1>
-            <p className='text-center text-zinc-500 text-xs py-2 md:w-1/2 self-center md:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum blanditiis harum laborum odio sapiente ipsum hic! Delectus commodi, rerum illo ex,  ea accusantium.</p>
+            <p className='text-center text-zinc-500 text-xs py-2 md:w-1/2 w-full self-center md:text-[14px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum blanditiis harum laborum odio sapiente ipsum hic! Delectus commodi, rerum illo ex,  ea accusantium.</p>
             <div className="card-container grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:my-4 my-3">
 
                 {cards.map((card, index) => (
