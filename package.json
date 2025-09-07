@@ -11,10 +11,9 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@splinetool/react-spline": "^4.1.0",
-    "@splinetool/runtime": "^1.10.55",
     "@tailwindcss/vite": "^4.1.12",
     "lucide-react": "^0.542.0",
+    "motion": "^12.23.12",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",

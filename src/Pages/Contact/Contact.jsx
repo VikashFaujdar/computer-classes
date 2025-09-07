@@ -14,30 +14,30 @@ const Contact = () => {
     }
 
     return (
-        <section class="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent text-white">
+        <section className="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent text-white">
             <form
 
             onSubmit={(e)=>{
                 submitHandler(e)
                 console.log("Form Submitted Successfully")
             }}
-                class="bg-white m-auto h-fit w-full max-w-sm overflow-hidden rounded-lg border shadow-md shadow-zinc-950/5 dark:bg-zinc-900">
+                className="bg-white m-auto h-fit w-full max-w-sm overflow-hidden rounded-lg border shadow-md shadow-zinc-950/5 dark:bg-zinc-900">
 
-                <div class="bg-card -m-px rounded-lg border p-8 pb-6">
-                    <div class="text-center">
-                        <a href="/" aria-label="go home" class="mx-auto block w-fit">
-                            <div class="w-10 h-10 bg-zinc-300 rounded-full mx-auto"></div>
+                <div className="bg-card -m-px rounded-lg border p-8 pb-6">
+                    <div className="text-center">
+                        <a href="/" aria-label="go home" className="mx-auto block w-fit">
+                            <div className="w-10 h-10 bg-zinc-300 rounded-full mx-auto"></div>
                         </a>
-                        <h1 class="mb-1 mt-4 text-xl font-semibold">Create a Tailark Account</h1>
-                        <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                        <h1 className="mb-1 mt-4 text-xl font-semibold">Create a Tailark Account</h1>
+                        <p className="text-sm text-zinc-600 dark:text-zinc-400">
                             Welcome! Create an account to get started
                         </p>
                     </div>
 
-                    <div class="mt-6 space-y-6">
-                        <div class="grid grid-cols-2 gap-3">
-                            <div class="space-y-2">
-                                <label for="firstname" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                    <div className="mt-6 space-y-6">
+                        <div className="grid grid-cols-2 gap-3">
+                            <div className="space-y-2">
+                                <label for="firstname" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
                                     Firstname
                                 </label>
                                 <input type="text" id="firstname" name="firstname" required
@@ -46,10 +46,10 @@ const Contact = () => {
                                 onChange={(e)=>{
                                     setFirstname(e.target.value)
                                 }}
-                                    class="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
+                                    className="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
                             </div>
-                            <div class="space-y-2">
-                                <label for="lastname" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                            <div className="space-y-2">
+                                <label for="lastname" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
                                     Lastname
                                 </label>
                                 <input type="text" id="lastname" name="lastname" required
@@ -58,44 +58,44 @@ const Contact = () => {
                                 onChange={(e)=>{
                                     setlastName(e.target.value)
                                 }}
-                                    class="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
+                                    className="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
                             </div>
                         </div>
 
-                        <div class="space-y-2">
-                            <label for="email" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                        <div className="space-y-2">
+                            <label for="email" className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">
                                 Email
                             </label>
                             <input type="email" id="email" name="email" required
-                                class="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
+                                className="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
                         </div>
 
-                        <div class="space-y-0.5">
-                            <div class="flex items-center justify-between">
-                                <label for="pwd" class="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                        <div className="space-y-0.5">
+                            <div className="flex items-center justify-between">
+                                <label for="pwd" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
                                     Password
                                 </label>
-                                <a href="#" class="text-sm text-indigo-600 hover:underline">Forgot your password?</a>
+                                <a href="#" className="text-sm text-indigo-600 hover:underline">Forgot your password?</a>
                             </div>
                             <input type="password" id="pwd" name="pwd" required
-                                class="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
+                                className="w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100" />
                         </div>
 
                         <button type="submit"
-                            class="w-full rounded-md bg-indigo-600 px-4 py-2 text-white text-sm font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            className="w-full rounded-md bg-indigo-600 px-4 py-2 text-white text-sm font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                             Sign In
                         </button>
                     </div>
 
-                    <div class="my-6 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-                        <hr class="border-dashed" />
-                        <span class="text-xs text-zinc-500">Or continue with</span>
-                        <hr class="border-dashed" />
+                    <div className="my-6 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+                        <hr className="border-dashed" />
+                        <span className="text-xs text-zinc-500">Or continue with</span>
+                        <hr className="border-dashed" />
                     </div>
 
-                    <div class="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-3">
                         <button type="button"
-                            class="flex items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
+                            className="flex items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 262">
                                 <path fill="#4285f4"
                                     d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622l38.755 30.023l2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" />
@@ -109,7 +109,7 @@ const Contact = () => {
                             Google
                         </button>
                         <button type="button"
-                            class="flex items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
+                            className="flex items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-medium hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256">
                                 <path fill="#f1511b" d="M121.666 121.666H0V0h121.666z" />
                                 <path fill="#80cc28" d="M256 121.666H134.335V0H256z" />
@@ -121,10 +121,10 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div class="p-3">
-                    <p class="text-center text-sm text-zinc-600 dark:text-zinc-400">
+                <div className="p-3">
+                    <p className="text-center text-sm text-zinc-600 dark:text-zinc-400">
                         Have an account?
-                        <a href="#" class="ml-1 text-indigo-600 hover:underline">Sign In</a>
+                        <a href="#" className="ml-1 text-indigo-600 hover:underline">Sign In</a>
                     </p>
                 </div>
             </form>

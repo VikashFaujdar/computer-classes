@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { RiMenu3Line } from "react-icons/ri";
 import { useGSAP } from '@gsap/react';
@@ -7,6 +7,7 @@ import Logo from '../assets/Logo-3.png'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+
 
   const [showmenu, setShowmenu] = useState(true);
 
@@ -34,14 +35,17 @@ const Header = () => {
   });
 
   return (
-    <div className="header sticky top-0 left-0 right-0 z-40 w-full h-full bg-[#FEFBEC] ">
+    <div className="header sticky top-0 left-0 right-0 z-40 w-full h-full bg-[#FEFBEC] " >
+
+
+
       <div className='container w-full px-4 lg:px-0 flex items-center justify-between h-18 '>
         <div className="logo w-40 md:w-50 object-center" >
           <img src={Logo} alt="" />
         </div>
 
         <nav className='Nav lg:flex items-center space-x-15 hidden'>
-        
+
           <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Home</Link>
           <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>About Us</Link>
           <Link to='' className='active:text-[#4DC879] links transition-all hover:text-[#4DC879] duration-300 text-[15px]'>Mentors</Link>

@@ -28,6 +28,10 @@ const Section5 = () => {
             type: "words"
         })
 
+        const featurePara = SplitText.create(".featurepara",{
+            type:"words"
+        })
+
         featureTl.from(".feature .left", {
             x: -100,
             opacity: 0,
@@ -41,7 +45,7 @@ const Section5 = () => {
         })
 
         featureTl.from(featureSubTitle.chars, {
-            y: 100,
+            y: 50,
             opacity:0,
             duration: 0.2,
             stagger: 0.1
@@ -49,11 +53,27 @@ const Section5 = () => {
 
 
         featureTl.from(featureTitle.words, {
-            y: 100,
+            y: 50,
             opacity: 0,
             duration: 0.2,
             stagger: 0.2
         })
+
+        featureTl.from(featurePara.words,{
+            y:50,
+            opacity:0,
+            duration:0.2,
+            staggre:0.2
+        })
+
+        featureTl.from(".featureCards", {
+            y:50,
+            opacity:0,
+            stagger:0.5
+        })
+
+
+        
     })
 
     return (
@@ -68,17 +88,17 @@ const Section5 = () => {
                     <img src={icon} alt="icon" className='absolute z-10 size-25 md:size-35 top-0 left-0' />
                 </div>
                 <div className="right lg:w-1/2 h-full">
-                    <h3 className='text-green-400 sub text-xl my-2 md:text-2xl h-full overflow-hidden'>Features</h3>
-                    <h1 className='text-[8vw] title leading-9 text-zinc-700 my-2 md:text-5xl md:leading-[1] font-medium h-full overflow-hidden '>Elevate  your skills <span className='text-green-400'>with</span> expert <span className='text-green-400'>coaching courses</span></h1>
-                    <p className='text-sm text-zinc-600 my-2 font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.fdjhd jHUY87rey  Quisquam, sequi facilis!</p>
-                    <div className="card flex items-center gap-4 w-full h-full bg-white p-4 rounded-2xl shadow-2xl mt-5">
+                    <h3 className='text-green-400 sub text-xl my-2 md:text-2xl overflow-hidden'>Features</h3>
+                    <h1 className='text-[8vw] title leading-9 text-zinc-700 my-2 md:text-5xl md:leading-[1] font-medium overflow-hidden '>Elevate  your skills <span className='text-green-400'>with</span> expert <span className='text-green-400'>coaching courses</span></h1>
+                    <p className='featurepara text-sm text-zinc-600 my-2 font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.fdjhd jHUY87rey  Quisquam, sequi facilis!</p>
+                    <div className="featureCards flex items-center gap-4 w-full h-full bg-white p-4 rounded-2xl shadow-2xl mt-5">
                         <img src={cyber} alt="cyber" className='h-15' />
                         <div className="dts">
                             <h1 className='text-zinc-800 my-2 text-sm font-medium'>3500+ fresh & in demand courses</h1>
                             <p className='text-zinc-600 text-xs my-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
                         </div>
                     </div>
-                    <div className="card flex items-center gap-4 w-full h-full bg-white p-4 rounded-2xl shadow-2xl mt-5">
+                    <div className="featureCards flex items-center gap-4 w-full h-full bg-white p-4 rounded-2xl shadow-2xl mt-5">
                         <img src={cyber} alt="cyber" className='h-15' />
                         <div className="dts">
                             <h1 className='text-zinc-800 my-2'>3500+ fresh & in demand courses</h1>
